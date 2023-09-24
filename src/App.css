@@ -1,0 +1,66 @@
+header {
+    background-color: #21222A;
+    color: #61DAFB;
+    padding: 2em 1.7em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: .42em;
+}
+
+.logo-img {
+    width: 1.75em;
+    color: #00D8FF;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.course-title {
+    margin-left: auto;
+    color: #DEEBF8;
+    font-weight: 600;
+}
+
+/* MAIN */
+main {
+    background-color: #282D35;
+    color: #FFFFFF;
+    padding: 3.6em 1.7em;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+main::after {
+    content: url('../public/Group.png');
+    position: absolute;
+    right: 1px;
+    top: 140px;
+}
+
+.list-title {
+    font-size: 2.44rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: -0.05em;
+}
+
+ul.main-list {
+    margin-left: 20px;
+    max-width: 90%;
+}
+
+.main-list li {
+    margin-bottom: 1em;
+    line-height: 1.3;
+}
+
+.main-list li::marker {
+    color: #61DAFB;
+    font-size: 1.5rem;
+}
