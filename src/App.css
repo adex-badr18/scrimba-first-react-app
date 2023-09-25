@@ -57,7 +57,7 @@ ul.main-list {
 
 .main-list li {
     margin-bottom: 1em;
-    line-height: 1.3;
+    line-height: 1.25;
 }
 
 .main-list li::marker {
