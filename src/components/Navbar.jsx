@@ -1,8 +1,8 @@
 import logo from '../assets/react.svg'
 
-export default function Navbar() {
+export default function Navbar(props) {
     return (
-        <header>
+        <header className={props.lightMode ? 'light' : ''}>
             <nav>
                 <img src={logo} className='logo-img' alt="Logo" />
                 <h3 className='logo-text'>ReactFacts</h3>
@@ -10,7 +10,7 @@ export default function Navbar() {
                 <div className="toggler">
                     <p className="light-text">Light</p>
 
-                    <div className="toggler-slider">
+                    <div className="toggler-slider" onClick={props.toggleMode}>
                         <div className="toggler-slider-circle"></div>
                     </div>
 
