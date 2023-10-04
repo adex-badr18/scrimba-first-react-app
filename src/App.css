@@ -45,7 +45,7 @@ nav {
 }
 
 .light .toggler .light-text {
-    color: #282D35;
+    color: #2B283A;
 }
 
 .toggler .dark-text {
@@ -70,15 +70,15 @@ nav {
 
 .light .toggler-slider {
     justify-content: flex-start;
-    background-color: #21222A;
-    border: 1px solid #21222A;
+    background-color: #2B283A;
+    border: 1px solid #2B283A;
 }
 
 .toggler-slider-circle {
     width: 15px;
     height: 16px;
     border-radius: 50%;
-    background-color: #282D35;
+    background-color: #2B283A;
 }
 
 .light .toggler-slider-circle {
@@ -87,7 +87,7 @@ nav {
 
 /* MAIN */
 main {
-    background-color: #282D35;
+    background-color: #21222A;
     color: #FFFFFF;
     padding: 3.6em 1.7em;
     flex: 1;
@@ -100,7 +100,7 @@ main {
 main.light {
     background-color: #FFFFFF;
     background-image: url('/react-icon-light.png');
-    color: #282D35;
+    color: #2B283A;
 }
 
 .list-title {
