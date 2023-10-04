@@ -37,7 +37,7 @@ main {
 }
 
 main::after {
-    content: url('../public/Group.png');
+    content: url('/Group.png');
     position: absolute;
     right: 1px;
     top: 140px;
