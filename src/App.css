@@ -2,6 +2,12 @@ header {
     background-color: #21222A;
     color: #61DAFB;
     padding: 2em 1.7em;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+}
+
+header.light {
+    background-color: #FFFFFF;
 }
 
 nav {
@@ -20,10 +26,63 @@ nav {
     font-weight: 700;
 }
 
-.course-title {
+/* Toggler */
+
+.toggler {
     margin-left: auto;
-    color: #DEEBF8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.toggler p {
+    font-size: 0.625rem;
     font-weight: 600;
+}
+
+.toggler .light-text {
+    color: #616060;
+}
+
+.light .toggler .light-text {
+    color: #282D35;
+}
+
+.toggler .dark-text {
+    color: #F5F5F5;
+}
+
+.light .toggler .dark-text {
+    color: #c9c9c9;
+}
+
+.toggler-slider {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #F5F5F5;
+    width: 28px;
+    height: 16px;
+    border-radius: 2em;
+    border: 1px solid #FFFFFF;
+    box-sizing: content-box;
+}
+
+.light .toggler-slider {
+    justify-content: flex-start;
+    background-color: #21222A;
+    border: 1px solid #21222A;
+}
+
+.toggler-slider-circle {
+    width: 15px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #282D35;
+}
+
+.light .toggler-slider-circle {
+    background-color: #FFFFFF;
 }
 
 /* MAIN */
@@ -32,15 +91,16 @@ main {
     color: #FFFFFF;
     padding: 3.6em 1.7em;
     flex: 1;
-    position: relative;
     z-index: 1;
+    background-image: url('/Group.png');
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
-main::after {
-    content: url('/Group.png');
-    position: absolute;
-    right: 1px;
-    top: 140px;
+main.light {
+    background-color: #FFFFFF;
+    background-image: url('/react-icon-light.png');
+    color: #282D35;
 }
 
 .list-title {
